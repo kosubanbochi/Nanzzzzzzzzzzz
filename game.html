@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - Sarang Gagak</title>
+    
+    <style>
+        /*
+        ========================================
+        CSS STYLING (Minimalis Tema Karasuno)
+        ========================================
+        */
+        :root {
+            --karasuno-black: #000000;
+            --karasuno-orange: #FF8C00;
+            --background-dark: #1f1f1f;
+            --text-light: #ffffff;
+            --button-shadow: #cc6600; 
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            text-align: center;
+            display: flex; /* Untuk memusatkan konten */
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Minimalis */
+        header {
+            background-color: var(--karasuno-black);
+            padding: 15px 0;
+            border-bottom: 3px solid var(--karasuno-orange);
+        }
+
+        .logo {
+            font-size: 2.5em;
+            color: var(--karasuno-orange);
+            letter-spacing: 2px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        /* Konten Utama (Memusatkan Tombol) */
+        .container {
+            flex-grow: 1; /* Agar konten mengambil sisa ruang */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Pusat Vertikal */
+            align-items: center; /* Pusat Horizontal */
+        }
+        
+        .game-title {
+            color: var(--karasuno-orange);
+            font-size: 3em;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+
+        /* Tombol Game (Simpel dan Mencolok) */
+        .game-link {
+            display: inline-block;
+            padding: 20px 40px;
+            background-color: var(--karasuno-orange);
+            color: var(--karasuno-black);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2em; /* Tombol besar */
+            border-radius: 8px;
+            box-shadow: 0 6px var(--button-shadow); 
+            transition: background-color 0.2s, transform 0.2s;
+            letter-spacing: 3px;
+        }
+
+        .game-link:hover {
+            background-color: #FF9933;
+            transform: translateY(-4px); /* Efek melompat */
+            box-shadow: 0 8px var(--button-shadow);
+        }
+        
+        /* Navigasi Dihapus (Karena terlalu minimalis, tapi bisa ditambahkan di header jika perlu) */
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="logo">GAME</p> <!-- Judul utama "GAME" di atas -->
+    </header>
+
+    <div class="container">
+        
+        <!-- PENTING: GANTI LINK INI DENGAN URL GAME AGREGATOR YANG ANDA INGINKAN -->
+        <a href="https://www.crazygames.com/" target="_blank" class="game-link">
+            GO! MAIN GAME
+        </a>
+        <p style="margin-top: 15px; font-size: 0.9em; color: gray;">*Dibuka di tab baru.</p>
+
+    </div>
+
+</body>
+</html>
